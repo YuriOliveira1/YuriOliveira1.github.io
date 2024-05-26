@@ -1,16 +1,35 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
 body{
-    background-color: rgb(56, 54, 54);
+    background-color: #0c1016;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
 }
 
 main{
-    background-color: yellow;
-    width: 500px;
-    margin: auto;
-    padding: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+    width: 1000px;
+    margin: 75px;
+    padding: 5px;
 }
+
+  .bullet{
+    position: relative;
+    padding-left: 20px; /* Espaço Bola */
+  }
+
+  .bullet::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: white;
+    transform: translateY(110%);
+  }
+
+  .space-text{
+    margin-left: 25px;
+  }
+  
+  
